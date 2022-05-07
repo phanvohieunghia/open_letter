@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  position: absolute;
+  color: gray;
+  background-color: transparent;
+}
+html {
+  font-family: "Montserrat" !important;
+}
+.container {
+  background-color: white;
+  padding: 0px;
+}
+p {
+  font-size: 16px;
+  font-weight: 600;
+}
+p.custom-p {
+  margin-bottom: 12px;
+}
+li {
+  list-style: none;
+}
+.fa-circle {
+  color: #0088b8;
+}
+.info-uto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info-uto p {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.title-uto > div:first-child {
+  text-align: center;
+  padding-top: 20px;
+}
+.title-uto > div:first-child img{
+  height: 120px;
+}
+.title-uto p {
+  font-size: 16px;
+}
+.title-uto p span {
+  font-size: 20px;
+  color: #0088b8;
+  font-weight: bold;
+}
+.mar-uto {
+  border: 2px solid #0088b8;
+  border-radius: 15px;
+  padding: 20px 30px;
+  page-break-inside: avoid;
+}
+.mar-uto p:nth-child(1) {
+  font-weight: bold;
+  color: #0088b8;
+}
+.content-edit {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  line-height: 25px;
+  margin-left: 15px;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+.content-edit:hover,
+.content-edit:focus {
+  border-color: #0088b8;
+}
+
+.button-uto {
+  text-align: center;
+  border: 2px solid #0088b8;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+  color: white;
+  background-color: #0088b8;
+  page-break-inside: avoid;
+}
+.button-uto p {
+  margin-bottom: 0px;
+}
+.contact-uto {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 20px 25%;
+  page-break-inside: avoid;
+}
+.contact-uto p:nth-child(1) {
+  font-weight: bold;
+  font-size: 27px;
+}
+.contact-uto p {
+  margin-left: 15px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.contact-uto p span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.thankyou p {
+  color: #0088b8;
+  text-align: center;
+}
+
+.fa-circle {
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+
+.fa-circle:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-circle:hover::after {
+  content: "x";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 8px;
+  transform: translate(-50%, -50%);
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.print-btn {
+  border-top-style: double;
+  border-bottom-style: double;
+  border-color: #0088b8;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.print-btn button {
+  padding: 0 20px;
+  border-radius: 8px;
+  outline: none;
+  background-color: #0088b8;
+  color: #fff;
+  border: none;
+}
+.btn.custom-btn {
+  padding: 0 10px;
+}
+@media only print {
+  @font-face {
+    font-family: 'SVN-Hamstring';
+    src: url(./fonts/SVN-Hamstring.otf);
+  }
+  body {
+    font-family: 'SVN-Hamstring', sans-serif;
+  }  
+  .hidden-print {
+    display: none !important;
+  }
+  .button-uto {
+    -webkit-print-color-adjust: exact;
+    background-color: #0088b8 !important;
+    color: #fff !important;
+  }
+  .title-uto > div:first-child {
+    padding-top: 10px;
+  }
+  .title-uto > div:first-child img{
+    height: 80px;
+  }
+  .contact-uto p:nth-child(1) {
+    font-size: 18px;
+  }
+  .contact-uto.title p {
+    margin-bottom: 0;
+  }
+}
