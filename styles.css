@@ -101,8 +101,9 @@ li {
   width: 36px;
 }
 .contact-content .item > div {
-  padding-left: 0;
+  padding-left: 4px;
   border: none;
+  margin-left: 0;
 }
 .thankyou {
   color: #0088b8;
