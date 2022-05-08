@@ -65,7 +65,7 @@
 			<div class="button-uto">
 				<p>Đăng ký ngay hôm nay để được tham gia trải nghiệm phần mềm miễn phí</p>
 			</div>
-			<div class="contact">Thông tin liên hệ:</div>
+			<div class="contact mb-4">Thông tin liên hệ:</div>
 			<div class="contact-content">
 				<div class="item">
 					<img src="./img/1.png" />
@@ -80,41 +80,32 @@
 					<div class="content-edit width-100" placeholder="..." contenteditable="true"></div>
 				</div>
 			</div>
-
 			<div class="thankyou">
 				Chân thành cảm ơn đến Quý công ty đã quan tâm tới thư ngỏ này!
-					<br>
-					Trân trọng kính chào!
+				<br>
+				Trân trọng kính chào!
 			</div>
 		</div>
 	</section>
 	<div class="print-btn hidden-print"><button onclick="handlePrint()">Print</button></div>
-
-
 	<script>
 		function myFunction() {
-
-			// Create an "li" node:
 			const node = document.createElement("div");
 			const nodeIcon = document.createElement("i")
 			const nodeContent = document.createElement("div")
-
 			node.classList.add("info-uto");
 			nodeIcon.classList.add("fa-solid");
 			nodeIcon.classList.add("fa-circle");
 			nodeContent.classList.add("content-edit");
 
-			// Append the text node to the "li" node:
 			nodeContent.innerText = ("");
 			nodeContent.contentEditable = true;
 			nodeContent.setAttribute('placeholder', '...')
 			node.appendChild(nodeIcon);
 			node.appendChild(nodeContent);
 
-			// Append the "li" node to the list:
 			document.getElementById("myList").appendChild(node);
 		}
-		//remove
 		function myFunction1() {
 			var myobjArr = document.getElementsByClassName("info-uto");
 			myobjArr[0].remove();
@@ -139,5 +130,4 @@
 		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 		</script>
 </body>
-
 </html>
