@@ -1,0 +1,32 @@
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-4{
+  margin-bottom: 4px !important;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.w-custom {
+  width: 200px;
+}
+.ta-justify {
+  text-align: justify;
+}
+.main-style {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0088b8;
+}
+.width-100 {
+  width: 100%;
+}
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
+}
+.width-200 {
+  width: 200px;
+}

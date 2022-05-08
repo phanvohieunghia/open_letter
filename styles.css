@@ -3,7 +3,6 @@
 [contenteditable][placeholder]:empty:before {
   content: attr(placeholder);
   position: absolute;
-  color: gray;
   background-color: transparent;
 }
 html {
@@ -45,15 +44,10 @@ li {
 .title-uto p {
   font-size: 16px;
 }
-.title-uto p span {
-  font-size: 20px;
-  color: #0088b8;
-  font-weight: bold;
-}
 .mar-uto {
   border: 2px solid #0088b8;
   border-radius: 15px;
-  padding: 20px 30px;
+  padding: 8px 4px;
   page-break-inside: avoid;
 }
 .mar-uto p:nth-child(1) {
@@ -64,7 +58,6 @@ li {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  width: 100%;
   line-height: 25px;
   margin-left: 15px;
   outline: none;
@@ -76,7 +69,6 @@ li {
 .content-edit:focus {
   border-color: #0088b8;
 }
-
 .button-uto {
   text-align: center;
   border: 2px solid #0088b8;
@@ -84,7 +76,7 @@ li {
   padding: 10px;
   text-align: center;
   width: 50%;
-  margin: 20px auto;
+  margin: 4px auto;
   color: white;
   background-color: #0088b8;
   page-break-inside: avoid;
@@ -92,43 +84,39 @@ li {
 .button-uto p {
   margin-bottom: 0px;
 }
-.contact-uto {
+.contact {
+  font-size: 16px;
+  font-weight: 700;
+}
+.contact-content {
   display: flex;
+  justify-content: space-around;
+}
+.contact-content .item {
+  display: flex;
+  text-align: center;
   align-items: center;
-  margin: 20px 0px 20px 25%;
-  page-break-inside: avoid;
 }
-.contact-uto p:nth-child(1) {
-  font-weight: bold;
-  font-size: 27px;
+.contact-content .item img {
+  width: 36px;
 }
-.contact-uto p {
-  margin-left: 15px;
-  line-height: 25px;
-  cursor: pointer;
+.contact-content .item > div {
+  padding-left: 0;
+  border: none;
 }
-.contact-uto p span {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
-  cursor: pointer;
-}
-
-.thankyou p {
+.thankyou {
   color: #0088b8;
   text-align: center;
+  font-weight: 700;
 }
-
 .fa-circle {
   position: relative;
   transition: all 0.2s ease-in;
 }
-
 .fa-circle:hover {
   color: red;
   cursor: pointer;
 }
-
 .fa-circle:hover::after {
   content: "x";
   position: absolute;
@@ -137,9 +125,6 @@ li {
   color: #fff;
   font-size: 8px;
   transform: translate(-50%, -50%);
-}
-.mb-0 {
-  margin-bottom: 0;
 }
 .print-btn {
   border-top-style: double;
@@ -163,13 +148,6 @@ li {
   padding: 0 10px;
 }
 @media only print {
-  @font-face {
-    font-family: 'SVN-Hamstring';
-    src: url(./fonts/SVN-Hamstring.otf);
-  }
-  body {
-    font-family: 'SVN-Hamstring', sans-serif;
-  }  
   .hidden-print {
     display: none !important;
   }
@@ -181,13 +159,7 @@ li {
   .title-uto > div:first-child {
     padding-top: 10px;
   }
-  .title-uto > div:first-child img{
+  .title-uto > div:first-child img {
     height: 80px;
-  }
-  .contact-uto p:nth-child(1) {
-    font-size: 18px;
-  }
-  .contact-uto.title p {
-    margin-bottom: 0;
   }
 }
