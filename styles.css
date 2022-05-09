@@ -148,7 +148,7 @@ li {
 .btn.custom-btn {
   padding: 0 10px;
 }
-@media only print {
+@media print {
   .hidden-print {
     display: none !important;
   }

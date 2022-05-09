@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demoUrl"></p>
+<div id="myList">
+    
+</div>
+
+
+<button onclick="myFunction()">Add</button>
+<button onclick="myFunction1()">Remove</button>
+<script>
+function myFunction() {
+
+// Create an "li" node:
+const node = document.createElement("input");
+node.classList.add("demo")
+const nodeSpan = document.createElement("p")
+
+// Create a text node:
+const textnode = document.createTextNode("Water");
+const textnode1 = document.createTextNode("menu")
+
+// Append the text node to the "li" node:
+node.appendChild(textnode);
+node.appendChild(nodeSpan);
+nodeSpan.appendChild(textnode1);
+
+
+// Append the "li" node to the list:
+
+document.getElementById("myList").appendChild(node);
+
+}
+
+function myFunction1() {
+  const element = document.getElementsByClassName("demo");
+  element[0].remove();
+}
+
+let url = window.document.URL;
+document.getElementById("demoUrl").innerHTML = url;
+
+</script>
+
+</body>
+</html>
+ 
